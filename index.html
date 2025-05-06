@@ -6,28 +6,36 @@
 		<title>Trama Studio</title>
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
-	<body>
-        <header>
-		<h1>Trama STUDIO</h1>
-		<p>
-			Somos un estudio de desarrollo web enfocado en pequeñas y medianas iniciativas
-			que buscan crecer con propósito. Combinamos tecnología accesible, diseño
-			funcional y un enfoque humano para crear soluciones digitales que
-			fortalecen negocios locales y generan impacto social. Creemos en el poder
-			de lo cercano, lo ético y lo sostenible para construir un internet más
-			justo y útil para todos.
-		</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="servicios.html">Áreas de Actuación</a></li>
-                <li><a href="quienessomos.html">Quiénes Somos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+	<body class="home">
+        <header class="hero">
+		<div class="hero-content">
+			<h1>TramaSTUDIO</h1>
+			<p>
+				Somos un estudio de desarrollo web enfocado en pequeñas y medianas iniciativas
+				que buscan crecer con propósito. Combinamos tecnología accesible, diseño
+				funcional y un enfoque humano para crear soluciones digitales que
+				fortalecen negocios locales y generan impacto social. Creemos en el poder
+				de lo cercano, lo ético y lo sostenible para construir un internet más
+				justo y útil para todos.
+			</p>
+			</div>
     </header>
     <main>
-
+		<nav>
+			<ul class="dropdown">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="servicios.html" class="dropdown-toggle">Areas de Actuación</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Desarrollo Web</a></li>
+					<li><a href="#">Diseño con Sentido</a></li>
+					<li><a href="#">Visibilidad Local</a></li>
+					<li><a href="#">Formación</a></li>
+					<li><a href="#">Soporte</a></li>
+				</ul></li>
+				<li><a href="quienessomos.html">Quiénes Somos</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
     </main>
     <footer></footer>
 	</body>
