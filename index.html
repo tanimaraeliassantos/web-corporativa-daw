@@ -7,36 +7,47 @@
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body class="home">
-        <header class="hero">
-		<div class="hero-content">
-			<h1>TramaSTUDIO</h1>
-			<p>
-				Somos un estudio de desarrollo web enfocado en pequeñas y medianas iniciativas
-				que buscan crecer con propósito. Combinamos tecnología accesible, diseño
-				funcional y un enfoque humano para crear soluciones digitales que
-				fortalecen negocios locales y generan impacto social. Creemos en el poder
-				de lo cercano, lo ético y lo sostenible para construir un internet más
-				justo y útil para todos.
-			</p>
+		<header>
+			<div class="title">
+				<h1>TramaSTUDIO</h1>
+				<h2>Tecnología que escucha, conecta y transforma comunidades.</h2>
 			</div>
-    </header>
-    <main>
+		</header>
 		<nav>
-			<ul class="dropdown">
+			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="servicios.html" class="dropdown-toggle">Areas de Actuación</a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Desarrollo Web</a></li>
-					<li><a href="#">Diseño con Sentido</a></li>
-					<li><a href="#">Visibilidad Local</a></li>
-					<li><a href="#">Formación</a></li>
-					<li><a href="#">Soporte</a></li>
-				</ul></li>
+				<li class="dropdown">
+					<a href="servicios.html" class="dropdown-toggle"
+						>Areas de Actuación</a
+					>
+					<ul class="dropdown-menu">
+						<li><a href="servicios.html#desarrollo-web">Desarrollo Web</a></li>
+						<li><a href="servicios.html#diseno-sentido">Diseño con Sentido</a></li>
+						<li><a href="servicios.html#visibilidad-local">Visibilidad Local</a></li>
+						<li><a href="servicios.html#formacion">Formación</a></li>
+						<li><a href="servicios.html#soporte">Soporte y Mantenimiento</a></li>
+					</ul>
+				</li>
 				<li><a href="quienessomos.html">Quiénes Somos</a></li>
 				<li><a href="contacto.html">Contacto</a></li>
 			</ul>
 		</nav>
-    </main>
-    <footer></footer>
+		<main class="home">
+			<section>
+				Somos un estudio de desarrollo web enfocado en pequeñas y medianas
+				iniciativas que buscan crecer con propósito. Combinamos tecnología
+				accesible, diseño funcional y un enfoque humano para crear soluciones
+				digitales que fortalecen negocios locales y generan impacto social.
+				Creemos en el poder de lo cercano, lo ético y lo sostenible para
+				construir un internet más justo y útil para todos.
+			</section>
+			<aside>
+				<img src="/img/red-personas.jpg" />
+			</aside>
+		</main>
+		<footer class="footer">
+			<p>&copy; 2025 TramaSTUDIO</p>
+			<p><a href="mailto:hola@tramastudio.com">hola@tramastudio.com</a></p>
+		  </footer>
 	</body>
 </html>
