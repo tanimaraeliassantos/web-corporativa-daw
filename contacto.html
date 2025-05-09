@@ -6,113 +6,116 @@
     <title>Trama Studio - Contacto</title>
     <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
-    <div class="container">
-        <header>   
-            <nav>
-				<ul class="dropdown">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="servicios.html" class="dropdown-toggle">Areas de Actuación</a>
+<body class="contacto">
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class="dropdown">
+					<a href="servicios.html" class="dropdown-toggle"
+						>Areas de Actuación</a
+					>
 					<ul class="dropdown-menu">
-						<li><a href="#">Desarrollo Web</a></li>
-						<li><a href="#">Diseño con Sentido</a></li>
-						<li><a href="#">Visibilidad Local</a></li>
-						<li><a href="#">Formación</a></li>
-						<li><a href="#">Soporte</a></li>
-					</ul></li>
-					<li><a href="quienessomos.html">Quiénes Somos</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
-            <h1>Contacto</h1>
-        </header>
-        <main>
-            <fieldset>
-                <legend>Información personal</legend>
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
-        
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="tel">Teléfono:</label>
-                <input type="tel" id="tel" name="tel">
-        
-                <label for="sitio">Sitio web:</label>
-                <input type="url" id="sitio" name="sitio">
-        
-                <label for="edad">Edad:</label>
-                <input type="number" id="edad" name="edad" min="0" max="120">
-        
-                <label for="fecha">Fecha de contacto:</label>
-                <input type="date" id="fecha" name="fecha">
-        
-                <label for="hora">Hora preferida:</label>
-                <input type="time" id="hora" name="hora">
-            </fieldset>
-        
-            <fieldset>
-                <legend>Preferencias</legend>
-                <div class="inline">
-                    <label for="importanciaTecnologia">¿Qué tan importante es para ti que el uso de la tecnología en tu proyecto sea participativo, ético y contribuya al bienestar de tu comunidad?  (0-100):</label>
-                    <input type="range" id="importanciaTecnologia" name="importanciaTecnologia" min="0" max="100" oninput="outputRange.value = value">
-                    <output id="outputRange">50</output>
-                    <p style="font-size: 0.8rem;">
-                        0 = Nada importante &nbsp;|&nbsp; 5 = Neutral &nbsp;|&nbsp; 10 = Muy importante
-                    </p>
-                </div>
-                <div class="inline">
-                    <label>¿Cómo nos encontraste?</label>
-                <input type="radio" id="web" name="referencia" value="web">
-                <label for="web">Web</label>
-                <input type="radio" id="redes" name="referencia" value="redes">
-                <label for="redes">Redes Sociales</label>
-                <input type="radio" id="otro" name="referencia" value="otro">
-                <label for="otro">Otro</label>
-                </div>
-                <div class="inline">
-                    <label for="intereses">Selecciona tus intereses:</label>
-                    <select id="intereses" name="intereses">
-                    <option value="web">Desarrollo Web</option>
-                    <option value="diseño">Diseño UI/UX</option>
-                    <option value="seo">SEO Local</option>
-                    <option value="formacion">Formación</option>
-                    </select>
-                </div>
-                <div class="inline">
-                    <label for="datalist">Ciudad (escribe para sugerencias):</label>
-                    <input list="ciudades" name="ciudad" id="datalist">
-                        <datalist id="ciudades">
-                            <option value="Madrid">
-                            <option value="Barcelona">
-                            <option value="Valencia">
-                            <option value="Sevilla">
-                        </datalist>
-                </div>
-                <div class="checkbox-vertical">
-                    <input type="checkbox" name="suscripcion" value="sí">
-                    Quiero recibir novedades por correo 
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Tu mensaje</legend>
-                <label for="mensaje">Escribe tu mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-            </fieldset>
+						<li><a href="servicios.html#desarrollo-web">Desarrollo Web</a></li>
+						<li><a href="servicios.html#diseno-sentido">Diseño con Sentido</a></li>
+						<li><a href="servicios.html#visibilidad-local">Visibilidad Local</a></li>
+						<li><a href="servicios.html#formacion">Formación</a></li>
+						<li><a href="servicios.html#soporte">Soporte y Mantenimiento</a></li>
+					</ul>
+				</li>
+				<li><a href="quienessomos.html">Quiénes Somos</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+    </header>
+    <main class="contacto">
+        <fieldset>
+            <legend>Información personal</legend>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="tel">Teléfono:</label>
+            <input type="tel" id="tel" name="tel">
+    
+            <label for="sitio">Sitio web:</label>
+            <input type="url" id="sitio" name="sitio">
+    
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="0" max="120">
+    
+            <label for="fecha">Fecha de contacto:</label>
+            <input type="date" id="fecha" name="fecha">
+    
+            <label for="hora">Hora preferida:</label>
+            <input type="time" id="hora" name="hora">
+        </fieldset>
+    
+        <fieldset>
+            <legend>Preferencias</legend>
             <div class="inline">
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpiar</button>
+                <label for="importanciaTecnologia">¿Qué tan importante es para ti que el uso de la tecnología en tu proyecto sea participativo, ético y contribuya al bienestar de tu comunidad?  (0-100):</label>
+                <input type="range" id="importanciaTecnologia" name="importanciaTecnologia" min="0" max="100" oninput="outputRange.value = value">
+                <output id="outputRange">50</output>
+                <p style="font-size: 0.8rem;">
+                    0 = Nada importante &nbsp;|&nbsp; 5 = Neutral &nbsp;|&nbsp; 10 = Muy importante
+                </p>
             </div>
-            </form>
             <div class="inline">
-                <p><strong>Email:</strong> contacto@tramastudio.com</p>
-                <p><strong>Teléfono:</strong> +34 600 000 000</p>
-                <p><strong>Ubicación:</strong> Tres Cantos, Madrid</p>
+                <label>¿Cómo nos encontraste?</label>
+            <input type="radio" id="web" name="referencia" value="web">
+            <label for="web">Web</label>
+            <input type="radio" id="redes" name="referencia" value="redes">
+            <label for="redes">Redes Sociales</label>
+            <input type="radio" id="otro" name="referencia" value="otro">
+            <label for="otro">Otro</label>
             </div>
-        </main>
-        <footer>
-
-        </footer>
-    </div>
+            <div class="inline">
+                <label for="intereses">Selecciona tus intereses:</label>
+                <select id="intereses" name="intereses">
+                <option value="web">Desarrollo Web</option>
+                <option value="diseño">Diseño UI/UX</option>
+                <option value="seo">SEO Local</option>
+                <option value="formacion">Formación</option>
+                </select>
+            </div>
+            <div class="inline">
+                <label for="datalist">Ciudad (escribe para sugerencias):</label>
+                <input list="ciudades" name="ciudad" id="datalist">
+                    <datalist id="ciudades">
+                        <option value="Madrid">
+                        <option value="Barcelona">
+                        <option value="Valencia">
+                        <option value="Sevilla">
+                    </datalist>
+            </div>
+            <div class="checkbox-vertical">
+                <input type="checkbox" name="suscripcion" value="sí">
+                Quiero recibir novedades por correo 
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Tu mensaje</legend>
+            <label for="mensaje">Escribe tu mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </fieldset>
+        <div class="inline">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </div>
+        </form>
+        <div class="inline">
+            <p><strong>Email:</strong> hola@tramastudio.com</p>
+            <p><strong>Teléfono:</strong> +34 600 000 000</p>
+            <p><strong>Ubicación:</strong> Tres Cantos, Madrid</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 TramaSTUDIO</p>
+        <p><a href="mailto:hola@tramastudio.com">hola@tramastudio.com</a></p>
+    </footer>
 </body>
 </html>
