@@ -5,29 +5,42 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Trama Studio - Servicios</title>
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="icon" href="img/favicon.ico" />
 	</head>
 	<body class="servicios">
 		<header>
+			<h1>Areas de Actuación</h1>
 			<nav>
-				<ul class="dropdown">
+				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="servicios.html" class="dropdown-toggle">Areas de Actuación</a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Desarrollo Web</a></li>
-						<li><a href="#">Diseño con Sentido</a></li>
-						<li><a href="#">Visibilidad Local</a></li>
-						<li><a href="#">Formación</a></li>
-						<li><a href="#">Soporte</a></li>
-					</ul></li>
+					<li class="dropdown">
+						<a href="servicios.html" class="dropdown-toggle"
+							>Areas de Actuación</a
+						>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="servicios.html#desarrollo-web">Desarrollo Web</a>
+							</li>
+							<li>
+								<a href="servicios.html#diseno-sentido">Diseño con Sentido</a>
+							</li>
+							<li>
+								<a href="servicios.html#visibilidad-local">Visibilidad Local</a>
+							</li>
+							<li><a href="servicios.html#formacion">Formación</a></li>
+							<li>
+								<a href="servicios.html#soporte">Soporte y Mantenimiento</a>
+							</li>
+						</ul>
+					</li>
 					<li><a href="quienessomos.html">Quiénes Somos</a></li>
 					<li><a href="contacto.html">Contacto</a></li>
 				</ul>
 			</nav>
-			<h1>Areas de Actuación</h1>
 		</header>
-		<main>
+		<main class="servicios">
 			<section>
-				<h2>Desarrollo Web</h2>
+				<h2 id="desarrollo-web">Desarrollo Web</h2>
 				<p>
 					Sitios web modernos, accesibles y funcionales para emprendedores,
 					negocios locales y organizaciones con propósito. Desde páginas
@@ -35,34 +48,37 @@
 				</p>
 			</section>
 			<section>
-				<h2>Diseño con Sentido</h2>
+				<h2 id="diseno-sentido">Diseño con Sentido</h2>
 				<p>
 					Identidad visual y diseño UX/UI centrado en las personas. Creamos
 					experiencias digitales inclusivas, empáticas y fáciles de usar.
 				</p>
 			</section>
 			<section>
-				<h2>Visibilidad Local</h2>
+				<h2 id="visibilidad-local">Visibilidad Local</h2>
 				<p>
 					Posicionamiento SEO local, estrategias de marketing digital ético y
 					gestión de redes sociales con enfoque comunitario.
 				</p>
 			</section>
 			<section>
-				<h2>Formación y Acompañamiento</h2>
+				<h2 id="formacion">Formación y Acompañamiento</h2>
 				<p>
 					Capacitación en herramientas digitales, asesoría en transformación
 					digital y talleres sobre presencia web con impacto social.
 				</p>
 			</section>
 			<section>
-				<h2>Soporte y Mantenimiento</h2>
+				<h2 id="soporte">Soporte y Mantenimiento</h2>
 				<p>
 					Hosting con conciencia ecológica y mantenimiento continuo con atención
 					cercana y confiable.
 				</p>
 			</section>
 		</main>
-		<footer></footer>
+		<footer class="footer">
+			<p>&copy; 2025 TramaSTUDIO</p>
+			<p><a href="mailto:hola@tramastudio.com">hola@tramastudio.com</a></p>
+		</footer>
 	</body>
 </html>
