@@ -1,229 +1,288 @@
 :root {
-    --primary-color: #6A8D73;
-    --secondary-color: #d8CAB8;
-    --accent-color: #D9A441;
-    --text-color: #3C3C3C;
-    --background-color: #FFFFFF;
-    --hover-color: #C45B4F
+	--primary-color: #6a8d73;
+	--secondary-color: #d8cab8;
+	--accent-color: #d9a441;
+	--text-color: #3c3c3c;
+	--background-color: #ffffff;
+	--hover-color: #c45b4f;
 }
+
+/* HEADER */
+
+header {
+	grid-area: header;
+	background-color: var(--background-color);
+	text-align: center;
+}
+
+.title h1 {
+	margin-bottom: 5px;
+	color: var(--accent-color);
+}
+
+/* BODY */
 
 body {
-    background-image: url(/img/red-personas.jpg);
-    background-repeat:repeat;
-    background-size: auto;
-    font-family: sans-serif;
-    margin: 0;
-    padding: 40px;
-    color: var(--text-color);
+	font-family: sans-serif;
+	margin: 0;
+    padding: 0;
+	color: var(--text-color);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
-body.home, .servicios, .quienessomos {
-    background-image: none;
+body.home {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto 1fr auto;
+	grid-template-areas:
+		'header'
+		'nav'
+		'main-aside'
+		'footer';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
-    color: var(--accent-color);
+body.contacto {
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8)),
+		url(/img/red-personas.jpg);
+	background-repeat: repeat;
+	background-size: auto;
+}
+
+body.img {
+	opacity: 0.1;
+}
+
+/* MAIN Y ASIDE */
+
+main {
+    flex-grow: 1;
+    align-items: center;
+	justify-content: center;
+}
+
+main.home {
+	grid-area: main-aside;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 20px;
+	padding: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+main.servicios {
+	grid-area: main-aside;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 20px;
+	padding: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+main.contacto {
+	gap: 20px;
+	padding: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+main > section {
+	text-align: justify;
+	padding: 80px 80px;
+}
+
+aside > img {
+	display: block;
+	max-width: 100%;
+}
+
+section.quienessomos {
+	display: grid;
+	grid-template-columns: 1fr 300px;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+section.quienessomos > img {
+    max-width: 100%;
+    height: auto;
+}
+
+section.quienessomos > p {
+    text-align: justify;
+}
+
+/* FOOTER */
+
+footer {
+	grid-area: footer;
+	text-align: center;
+	padding: 0px;
+	background-color: var(--primary-color);
+	color: var(--background-color);
+}
+
+.footer a {
+	color: var(--background-color);
+	text-decoration: none;
+}
+
+.footer a:hover {
+	text-decoration: underline;
 }
 
 /* MENU NAVEGACION */
 
 nav {
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: var(--primary-color);
-    padding: 10px;
+	grid-area: nav;
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	background-color: var(--primary-color);
+	padding: 10px;
+	width: 100%;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
 
 nav ul li {
-    margin-right: 20px;
-    position: relative;
+	margin-right: 20px;
+	position: relative;
 }
 
 nav ul li a {
-    display: block;
-    text-decoration: none;
-    color: var(--background-color);
+	display: block;
+	text-decoration: none;
+	color: var(--background-color);
 }
 
 nav ul li a:hover {
-    color: var(--text-color);
+	color: var(--text-color);
 }
 
 .dropdown {
-    position: relative;
+	position: relative;
 }
 
 .dropdown-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: var(--primary-color);
-    border: 1px solid var(--background-color);
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-    display: none;
-    z-index: 10;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: var(--primary-color);
+	border: 1px solid var(--background-color);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+	display: none;
+	z-index: 10;
 }
 
-.dropdown .dropdown-toggle:hover + .dropdown-menu {
+.dropdown-toggle:hover + .dropdown-menu {
+	display: block;
+}
+
+.dropdown:hover > .dropdown-menu {
     display: block;
 }
 
 .dropdown-menu li a {
-    padding: 10px 15px;
-    color: var(--background-color);
-    display: block;
+	padding: 10px 15px;
+	color: var(--background-color);
+	display: block;
 }
 
 .dropdown-menu li a:hover {
-    background-color: var(--accent-color);
-    color: var(--text-color);
-    width: 100%;
+	background-color: var(--accent-color);
+	color: var(--text-color);
+	width: 100%;
 }
 
-/* HOME*/
-.hero {
-    height: 90vh;
-    background-image: url(/img/red-personas.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    color: var(--background-color);
-  }
-  
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 0;
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero-button {
-    background-color: #6A8D73;
-    color: #fff;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .hero-button:hover {
-    background-color: #4a6a53;
-  }
-
-
-/* CONTACTO */
+/* FORMULARIO CONTACTO */
 
 fieldset {
-    border: 1px solid var(--secondary-color);
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
+	border: 1px solid var(--secondary-color);
+	border-radius: 5px;
+	width: 90%;
 }
 
 legend {
-    font-weight: bold;
-    padding: 0 10px;
+	font-weight: bold;
+	padding: 0 10px;
 }
 
 label {
-    display: block;
-    margin-top: 15px;
-    font-weight: 500;
-    width: 100%;
+	display: block;
+	margin-top: 15px;
+	font-weight: 500;
+	width: 100%;
 }
 
-input, select, textarea, datalist {
-    width: 100%;
-    padding: 10x;
-    margin-top: 5px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 6px;
-    font-size: 1rem;
-    align-items: center;
-    justify-content: center
+input,
+select,
+textarea,
+datalist {
+	width: 100%;
+	padding: 10x;
+	margin-top: 5px;
+	border: 1px solid var(--secondary-color);
+	border-radius: 6px;
+	font-size: 1rem;
+	align-items: center;
+	justify-content: center;
 }
 
 button {
-    padding: 10px 15px;
-    background-color: var(--text-color);
-    color: var(--background-color);
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 20px;
+	padding: 10px 15px;
+	background-color: var(--text-color);
+	color: var(--background-color);
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+	margin-top: 20px;
 }
-button[type="reset"] {
-    margin-left: 10px;
+button[type='reset'] {
+	margin-left: 10px;
 }
 
 output {
-    display: block;
-    margin-top: 6px;
-    font-style: italic;
-}
-
-.container {
-    max-width: 700px;
-    background: rgba(255, 255, 255, 0.95);
-    margin: auto;
-    padding: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 30px;
+	display: block;
+	margin-top: 6px;
+	font-style: italic;
 }
 
 .checkbox-vertical {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	margin-top: 10px;
 }
 
 .inline {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    margin: 20px;
-   
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3px;
+	margin: 20px;
 }
