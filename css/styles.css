@@ -18,7 +18,7 @@ header {
 header h1 {
 	margin-bottom: 3rem;
 	color: var(--accent-color);
-    font-size: 4rem;
+	font-size: 4rem;
 }
 
 /* BODY */
@@ -49,7 +49,7 @@ body.home {
 
 body.contacto {
 	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8)),
-		url(/img/red-personas.jpg);
+		url(img/red-personas.jpg);
 	background-repeat: repeat;
 	background-size: auto;
 }
@@ -441,95 +441,94 @@ output {
 	}
 }
 
-
 /* TELEFÓNO EN FORMATO HORIZONTAL */
 @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
-    body {
-        font-size: 1.1rem;
-    }
+	body {
+		font-size: 1.1rem;
+	}
 
-    header {
-        padding: 15px;
-        text-align: center;
-    }
+	header {
+		padding: 15px;
+		text-align: center;
+	}
 
-    header h1 {
-        font-size: 2.2rem;
-        margin-bottom: 10px;
-    }
+	header h1 {
+		font-size: 2.2rem;
+		margin-bottom: 10px;
+	}
 
-    nav {
-        font-size: 1.3rem;
-        padding: 8px;
-    }
+	nav {
+		font-size: 1.3rem;
+		padding: 8px;
+	}
 
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-    }
+	nav ul {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+	}
 
-    nav ul li {
-        margin: 0 15px;
-        width: auto;
-        text-align: left;
-    }
+	nav ul li {
+		margin: 0 15px;
+		width: auto;
+		text-align: left;
+	}
 
-    nav ul li a {
-        display: block;
-        padding: 10px;
-    }
+	nav ul li a {
+		display: block;
+		padding: 10px;
+	}
 
-    .dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: var(--primary-color);
-        border: none;
-        box-shadow: none;
-        width: auto;
-        text-align: left;
-        display: none;
-        z-index: 10;
-    }
+	.dropdown-menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: var(--primary-color);
+		border: none;
+		box-shadow: none;
+		width: auto;
+		text-align: left;
+		display: none;
+		z-index: 10;
+	}
 
-    .dropdown:hover > .dropdown-menu {
-        display: block;
-    }
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+	}
 
-    main {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+	main {
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-    body.home main.home {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        padding: 20px;
-        align-items: flex-start;
-    }
+	body.home main.home {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		padding: 20px;
+		align-items: flex-start;
+	}
 
-    body.home main > section,
-    body.home aside {
-        padding: 20px;
-        max-width: 100%;
-    }
+	body.home main > section,
+	body.home aside {
+		padding: 20px;
+		max-width: 100%;
+	}
 
-    body.servicios main.servicios {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        padding: 20px;
-        align-items: flex-start;
-    }
+	body.servicios main.servicios {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		padding: 20px;
+		align-items: flex-start;
+	}
 
-    body.servicios main > section {
-        padding: 20px;
-        max-width: 100%;
-    }
+	body.servicios main > section {
+		padding: 20px;
+		max-width: 100%;
+	}
 
-    body.quienessomos section.quienessomos {
+	body.quienessomos section.quienessomos {
 		grid-template-columns: 1fr;
 		padding: 20px;
 	}
@@ -540,8 +539,7 @@ output {
 		height: auto;
 	}
 
-
-    body.contacto main.contacto {
+	body.contacto main.contacto {
 		padding: 20px;
 		margin: 30px;
 	}
@@ -556,9 +554,9 @@ output {
 		width: 100%;
 	}
 
-    footer {
-        padding: 10px;
-        text-align: center;
-        font-size: 1rem;
-    }
+	footer {
+		padding: 10px;
+		text-align: center;
+		font-size: 1rem;
+	}
 }
