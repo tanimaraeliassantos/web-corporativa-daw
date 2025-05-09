@@ -25,7 +25,7 @@ header {
 body {
 	font-family: sans-serif;
 	margin: 0;
-    padding: 0;
+	padding: 0;
 	color: var(--text-color);
 	min-height: 100vh;
 	display: flex;
@@ -60,8 +60,8 @@ body.img {
 /* MAIN Y ASIDE */
 
 main {
-    flex-grow: 1;
-    align-items: center;
+	flex-grow: 1;
+	align-items: center;
 	justify-content: center;
 }
 
@@ -109,18 +109,18 @@ aside > img {
 section.quienessomos {
 	display: grid;
 	grid-template-columns: 1fr 300px;
-    gap: 20px;
-    align-items: center;
-    padding: 20px;
+	gap: 20px;
+	align-items: center;
+	padding: 20px;
 }
 
 section.quienessomos > img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 section.quienessomos > p {
-    text-align: justify;
+	text-align: justify;
 }
 
 /* FOOTER */
@@ -202,7 +202,7 @@ nav ul li a:hover {
 }
 
 .dropdown:hover > .dropdown-menu {
-    display: block;
+	display: block;
 }
 
 .dropdown-menu li a {
@@ -285,4 +285,161 @@ output {
 	justify-content: center;
 	gap: 3px;
 	margin: 20px;
+}
+
+/* TABLET EN FORMATO VERTICAL */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	body.home {
+		grid-template-columns: 1fr; /* Volver a una sola columna para main y aside */
+		grid-template-areas:
+			'header'
+			'nav'
+			'main-aside'
+			'footer';
+	}
+
+	main.home {
+		grid-template-columns: 1fr;
+		padding: 20px;
+	}
+
+	main > section,
+	aside {
+		padding: 20px;
+	}
+
+	section.quienessomos {
+		grid-template-columns: 1fr;
+	}
+
+	section.quienessomos > img {
+		margin-top: 20px;
+
+		nav ul {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+
+		nav ul li {
+			margin: 0 15px;
+		}
+
+		fieldset {
+			width: 95%;
+		}
+
+		main.contacto {
+			padding: 40px;
+		}
+	}
+}
+
+/* TELEFÓNO EN FORMATO VERTICAL */
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+	header {
+		text-align: center;
+	}
+
+	header h1 {
+		font-size: 2rem;
+		margin-bottom: 10px;
+	}
+
+	nav {
+		font-size: 0.9rem;
+		padding: 8px;
+	}
+
+	nav ul {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav ul li {
+		margin: 10px 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	nav ul li a {
+		display: block;
+	}
+
+	.dropdown-menu {
+		position: static;
+		display: none;
+		border: none;
+		width: 80%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.dropdown.active > .dropdown-menu {
+		display: block;
+	}
+
+	.dropdown-menu li a {
+		padding: 5px;
+		background-color: var(--secondary-color);
+		color: var(--text-color);
+	}
+
+	main {
+		padding: 0px;
+	}
+
+	body.home main.home {
+		grid-template-columns: 1fr;
+		padding: 20px;
+	}
+
+	body.home main > section,
+	body.home aside {
+		padding: 20px 0;
+	}
+
+	body.servicios main.servicios {
+		grid-template-columns: 1fr;
+		padding: 20px;
+	}
+
+	body.servicios main > section {
+		padding: 20px 0;
+	}
+
+	body.quienessomos section.quienessomos {
+		grid-template-columns: 1fr;
+		padding: 20px;
+	}
+
+	body.quienessomos main.quienessomos > img {
+		margin-top: 20px;
+		max-width: 100%;
+		height: auto;
+	}
+
+	body.contacto main.contacto {
+		padding: 20px;
+		margin: 30px;
+	}
+
+	body.contacto .inline {
+		flex-direction: column;
+		margin: 10px 0;
+		gap: 10px;
+	}
+
+	body.contacto input[type='range'] {
+		width: 100%;
+	}
+
+	footer {
+		padding: 10px;
+		text-align: center;
+		font-size: 0.9rem;
+	}
 }
