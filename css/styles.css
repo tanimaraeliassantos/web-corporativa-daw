@@ -15,9 +15,10 @@ header {
 	text-align: center;
 }
 
-.title h1 {
-	margin-bottom: 5px;
+header h1 {
+	margin-bottom: 3rem;
 	color: var(--accent-color);
+    font-size: 4rem;
 }
 
 /* BODY */
@@ -195,10 +196,6 @@ nav ul li a:hover {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 	display: none;
 	z-index: 10;
-}
-
-.dropdown-toggle:hover + .dropdown-menu {
-	display: block;
 }
 
 .dropdown:hover > .dropdown-menu {
@@ -442,4 +439,126 @@ output {
 		text-align: center;
 		font-size: 0.9rem;
 	}
+}
+
+
+/* TELEFÓNO EN FORMATO HORIZONTAL */
+@media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    header {
+        padding: 15px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+        width: auto;
+        text-align: left;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--primary-color);
+        border: none;
+        box-shadow: none;
+        width: auto;
+        text-align: left;
+        display: none;
+        z-index: 10;
+    }
+
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+
+    main {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body.home main.home {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    body.home main > section,
+    body.home aside {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    body.servicios main.servicios {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    body.servicios main > section {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    body.quienessomos section.quienessomos {
+		grid-template-columns: 1fr;
+		padding: 20px;
+	}
+
+	body.quienessomos main.quienessomos > img {
+		margin-top: 20px;
+		max-width: 100%;
+		height: auto;
+	}
+
+
+    body.contacto main.contacto {
+		padding: 20px;
+		margin: 30px;
+	}
+
+	body.contacto .inline {
+		flex-direction: column;
+		margin: 10px 0;
+		gap: 10px;
+	}
+
+	body.contacto input[type='range'] {
+		width: 100%;
+	}
+
+    footer {
+        padding: 10px;
+        text-align: center;
+        font-size: 1rem;
+    }
 }
