@@ -6,57 +6,50 @@
 		<title>Trama Studio - Quienes Somos</title>
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
-	<body class="quienessomos">
+	<body>
 		<header>
+			<h1>Quiénes Somos</h1>
 			<nav>
-				<ul class="dropdown">
+				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="servicios.html" class="dropdown-toggle">Areas de Actuación</a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Desarrollo Web</a></li>
-						<li><a href="#">Diseño con Sentido</a></li>
-						<li><a href="#">Visibilidad Local</a></li>
-						<li><a href="#">Formación</a></li>
-						<li><a href="#">Soporte</a></li>
-					</ul></li>
+					<li class="dropdown">
+						<a href="servicios.html" class="dropdown-toggle"
+							>Areas de Actuación</a
+						>
+						<ul class="dropdown-menu">
+							<li><a href="servicios.html#desarrollo-web">Desarrollo Web</a></li>
+							<li><a href="servicios.html#diseno-sentido">Diseño con Sentido</a></li>
+							<li><a href="servicios.html#visibilidad-local">Visibilidad Local</a></li>
+							<li><a href="servicios.html#formacion">Formación</a></li>
+							<li><a href="servicios.html#soporte">Soporte y Mantenimiento</a></li>
+						</ul>
+					</li>
 					<li><a href="quienessomos.html">Quiénes Somos</a></li>
 					<li><a href="contacto.html">Contacto</a></li>
 				</ul>
 			</nav>
-			<h1>Quiénes Somos</h1>
 		</header>
 		<main>
-			<section>
-				<img
-					src="img/trama-personas-internet.jpg"
-					alt="Imagen con líneas interligando contornos de personas demonstrando trama de conexión social"
-				/>
-
+			<section class="quienessomos">
+				<div>
 				<p>
 					Somos una empresa nacida del deseo de tejer vínculos significativos a
 					través de la tecnología.
-				</p>
-				<p>
 					Creemos que el desarrollo web no tiene por qué ser frío, impersonal o
 					inaccesible. Por eso, creamos este proyecto con una visión clara:
 					acercar herramientas digitales a quienes realmente las necesitan,
 					desde un enfoque humano, ético y local.
-				</p>
-				<p>
 					Nuestra historia comienza con una emprendedora que, al involucrarse
 					activamente en redes comunitarias y proyectos de impacto social, notó
 					una gran necesidad: muchas pequeñas iniciativas tenían un enorme
 					potencial, pero carecían de presencia digital. Así nació esta empresa:
 					como una forma de amplificar esas voces, fortalecer negocios con
 					propósito y acompañar a quienes quieren crecer sin perder su esencia.
-				</p>
-				<p>
 					Creemos en la fuerza de las tramas sociales locales. En cada web que
 					construimos, hay una historia, un barrio, una comunidad. Por eso,
 					trabajamos con cercanía, escuchando de verdad, diseñando con
 					sensibilidad y desarrollando con responsabilidad.
 				</p>
-
 				<p>Nuestros valores son claros:</p>
 				<ul>
 					<li>Accesibilidad: la tecnología debe estar al alcance de todos.</li>
@@ -76,8 +69,16 @@
 					Más que una empresa de desarrollo web, somos parte de una red que cree
 					en un futuro más justo, conectado y humano.
 				</p>
+				</div>
+				<img
+					src="img/trama-personas-internet.jpg"
+					alt="Imagen con líneas interligando contornos de personas demonstrando trama de conexión social"
+				/>
 			</section>
 		</main>
-		<footer></footer>
+		<footer class="footer">
+			<p>&copy; 2025 TramaSTUDIO</p>
+			<p><a href="mailto:hola@tramastudio.com">hola@tramastudio.com</a></p>
+		</footer>
 	</body>
 </html>
