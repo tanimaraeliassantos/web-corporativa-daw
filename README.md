@@ -41,6 +41,35 @@ Se pide como labor de investigación que los alumnos suban la actividad a github
 - Página secundaria con formulario para que el usuario pueda entrar en contacto con la empresa enviando sus datos
 - Páginas secundariaas con informaciones relevantes al negocio de la empresa
 
+  ### index.html (Home)
+  Página de inicio que presenta una introducción al estudio y su propuesta de valor.<br>
+  Estructura: Utiliza grid para el layout principal con áreas definidas para header, nav, main-aside, y footer. Dentro de main, se usa grid
+  para organizar la sección de texto y el aside de la imagen en dos columnas en pantallas medianas y grandes.<br>
+  Se adapta a diferentes tamaños de pantalla utilizando Media Queries, apilando la sección y el aside en una sola columna en pantallas más pequeñas (móvil y tablet vertical).
+
+  ### contacto.html (Contacto)
+  Página con un formulario de contacto para que los usuarios envíen mensajes y datos de contacto al estudio, además de mostrar información de contacto directa.<br>
+  Estructura: El contenido principal contiene varios elementos <fieldset> para organizar los campos del formulario. Se utilizan <label> para las etiquetas de los campos y varios      tipos de <input> (text, email, tel, url, number, date, time, range, radio, checkbox), <select>, <textarea>, y <datalist>. Los botones de enviar y limpiar están dentro de un div     con la clase inline. La información de contacto (email, teléfono, ubicación) también está dentro de un div con la clase inline.<br>
+  Se adapta a diferentes tamaños de pantalla utilizando Media Queries, haciendo que los elementos inline se apilen en pantallas pequeñas y ajustando el ancho de los fieldset.
+
+  ### quienessomos.html (Quiénes Somos)
+  Página que presenta la historia, la filosofía y los valores del estudio.<br>
+  Estructura: El contenido principal utiliza grid para organizar el texto y la imagen en dos columnas en pantallas medianas y grandes. El texto se encuentra dentro de un div y la     imagen está fuera.<br>
+  Se adapta a diferentes tamaños de pantalla utilizando Media Queries, haciendo que la disposición del texto y la imagen pase a una sola columna (apilándose verticalmente) en         pantallas más pequeñas.<br>
+
+  ### servicios.html (Areas de Actuación)
+  Página que lista y describe las diferentes áreas de actuación o servicios que ofrece el estudio.<br>
+  Estructura: El contenido principal utiliza grid para organizar las secciones de servicios en dos columnas en pantallas medianas y grandes. Cada servicio tiene un encabezado (h2)    con un ID para el anclaje desde el menú y un párrafo con la descripción.<br>
+  Se adapta a diferentes tamaños de pantalla utilizando Media Queries, haciendo que las secciones de servicios se dispongan en una sola columna en pantallas más pequeñas.
+
+  ### Menú de Navegación
+  Una lista desordenada con elementos de lista (<li>). Algunos elementos de lista tienen la clase dropdown y contienen un enlace y otra lista desordenada para el submenú.
+  En pantallas pequeñas (móvil vertical), el menú se transforma a una disposición vertical (flex-direction: column) y el submenú se oculta por defecto, requiriendo interacción. En    pantallas de móvil horizontal, el menú vuelve a ser horizontal.
+
+  ### Footer
+  Estructura: Contiene un párrafo con información de copyright y otro párrafo con un enlace de correo electrónico.
+  El estilo básico del footer se mantiene en todas las resoluciones, con ajustes mínimos de padding y tamaño de fuente en pantallas más pequeñas.
+
 ## Technologies
 
 - CSS
