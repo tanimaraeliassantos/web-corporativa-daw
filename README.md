@@ -2,7 +2,7 @@
 
 ## Introducción
 
-Este proyecto es una página web para una empresa fictícia llamada tramaSTUDIO. Ofrece informaciones básicas sobre la página web y un formulario para contacto.
+Este proyecto es una página web para una empresa fictícia llamada tramaSTUDIO. Ofrece informaciones básicas sobre la empresa y un formulario para contacto.
 
 ## Objetivos
 
